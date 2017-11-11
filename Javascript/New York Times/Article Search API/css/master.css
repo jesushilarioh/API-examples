@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+.main-title {
+    margin: 20px 0;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-btn>.btn {
+    border-radius: 0;
+}
+.article-div a {
+    color: #fff;
+    text-decoration: none;
+}
+.article-div h3 {
+    margin: 20px 0;
+}
+.article-div div {
+    background-color: rgba(37, 37, 37, 0.89);
+    padding: 20px 20px;
+    margin: 20px 0;
+}
+.article-div img, .article-div div {
+    border-radius: 4px;
+}
+.article-div img {
+    width: 100%;
+}
