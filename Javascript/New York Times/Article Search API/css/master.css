@@ -1,3 +1,6 @@
+*, ::after, ::before {
+    box-sizing: none;
+}
 body {
     background-color: #333;
     color: #fff;
@@ -17,7 +20,6 @@ body {
 }
 .article-div div {
     background-color: rgba(37, 37, 37, 0.89);
-    padding: 20px 20px;
     margin: 20px 0;
 }
 .article-div img, .article-div div {
@@ -25,4 +27,36 @@ body {
 }
 .article-div img {
     width: 100%;
+}
+
+.flex-rows {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.boxes{
+    padding: 15px;
+}
+.box_1, .box_5 {
+    flex-basis: 100%;
+}
+.box_2, .box_3, .box_4 {
+    flex-basis: 32.5%;
+}
+
+.box_6, .box_7 {
+    flex-basis: 49.4%;
+}
+.box_8 {
+    order: 3;
+    flex-basis: 45%;
+}
+.box_9 {
+    order: 1;
+}
+.box_10 {
+    order: 2;
+}
+.box_9, .box_10{
+    flex-basis: 26.2%;
 }
