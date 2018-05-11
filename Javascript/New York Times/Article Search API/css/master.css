@@ -33,6 +33,9 @@ button {
 .container {
     padding-bottom: 20px;
 }
+.article-div {
+    padding-bottom: 15px;
+}
 .main-title {
     margin: 20px 0;
 }
@@ -56,7 +59,7 @@ button {
 }
 .article-div img {
     border-radius: 1px;
-    box-shadow: 5px 10px 12px rgba(170, 170, 170, 0.8);
+    box-shadow: 5px 10px 12px rgba(170, 170, 170, 0.8)!important;
 }
 .article-div img {
     width: 100%;
@@ -96,6 +99,17 @@ button {
 .box_10 {
     order: 2;
 }
-.box_9, .box_10{
+.box_9, .box_10 {
     flex-basis: 26.2%;
+}
+.footer {
+    padding-top: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+}
+.footer-para-1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 16px 0 0 0;
 }

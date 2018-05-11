@@ -7,7 +7,7 @@ $(document).ready(function () {
   function apiCall() {
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
-      'api-key': "937889dd098d40988431171b07ff38e1",
+      'api-key': "<--- YOUR API KEY HERE -->",
       'q': $("#userValue").val(),
       'begin_date': "17001111",
       'end_date': "20191111",
@@ -29,12 +29,12 @@ $(document).ready(function () {
       function loop(x, y) {
         entire_article += "<div class='flex-rows'>"
         for (var i = x; i < y; i++) {
-          let month = new Date(object_info.docs[i].pub_date).getUTCMonth();
-          let date = new Date(object_info.docs[i].pub_date).getUTCDate();
-          let year = new Date(object_info.docs[i].pub_date).getUTCFullYear();
-          // let date = month.getMonth() + '/' + month.getDay() + '/' + month.getFullYear()
-          console.log('Month = ' + (parseInt(month) + 1) + ' Date = ' + date + ' Year = ' + year);
-          // console.log(date);
+          // let month = new Date(object_info.docs[i].pub_date).getUTCMonth();
+          // let date = new Date(object_info.docs[i].pub_date).getUTCDate();
+          // let year = new Date(object_info.docs[i].pub_date).getUTCFullYear();
+          // // let date = month.getMonth() + '/' + month.getDay() + '/' + month.getFullYear()
+          // console.log('Month = ' + (parseInt(month) + 1) + ' Date = ' + date + ' Year = ' + year);
+          // // console.log(date);
 
           entire_article += "<div class='box_" + (i + 1) + " boxes'>"
           entire_article += "<a href='" + JSON.stringify(object_info.docs[i].web_url).toString().replace(/"/g, "") + "' target='_blank'><div>";
@@ -45,12 +45,13 @@ $(document).ready(function () {
             entire_article += "<img src='" + "https://www.nytimes.com/" + JSON.stringify(object_info.docs[i].multimedia[0].url).toString().replace(/"/g, "") + "'>";
           }
 
-          entire_article += "<p class='article_date'>";
-          entire_article += (parseInt(month) + 1) + '/' + date + '/' + year + "</p>";
+          // entire_article += "<p class='article_date'>";
+          // entire_article += (parseInt(month) + 1) + '/' + date + '/' + year + "</p>";
           entire_article += "</div></a>";
           entire_article += "</div>";
           // $("#articleSnippet").html(articleSnippet);
           $("#entire_article").html(entire_article);
+          // $(".footer").css("display", "flex")
 
         }
 
@@ -63,7 +64,7 @@ $(document).ready(function () {
       loop(4, 5);
       loop(5, 7);
       loop(7, 10);
-      $(".container").css("border-bottom", "1px solid #aaaaaa");
+      $(".article-div").css("border-bottom", "1px solid #aaaaaa");
 
     }).fail(function (err) {
       // throw err;
