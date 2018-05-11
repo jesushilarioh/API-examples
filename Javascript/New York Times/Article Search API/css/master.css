@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Playfair+Display:400,700,900|Open+Sans');
+/* fonts
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
 *, ::after, ::before {
     box-sizing: none;
 }
 body {
     background-color: #FFF;
+    color: #000;
+    padding-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+h4 {
+    font-family: 'Playfair Display', serif;
+    padding: .5em 0 0 0;
+    margin: 4px 0 0 0;
+}
+h4 span {
+    font-weight: 700;
+}
+button {
+    background-color: #000;
     color: #fff;
+}
+.container {
+    padding-bottom: 20px;
 }
 .main-title {
     margin: 20px 0;
@@ -12,30 +40,41 @@ body {
     border-radius: 0;
 }
 .article-div a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 .article-div h3 {
-    margin: 20px 0;
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+.article-div p {
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 12px;
 }
 .article-div div {
-    background-color: rgba(37, 37, 37, 0.89);
-    margin: 20px 0;
+    margin: 10px 0 0 0;
 }
-.article-div img, .article-div div {
-    border-radius: 4px;
+.article-div img {
+    border-radius: 1px;
+    box-shadow: 5px 10px 12px rgba(170, 170, 170, 0.8);
 }
 .article-div img {
     width: 100%;
 }
-
-.flex-rows {
-    display: flex;
-    padding: 15px;
-    justify-content: space-between;
+.article_date {
+    color: rgb(231, 44, 44);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+}
+@media (min-width:768px){
+    .flex-rows {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .boxes{
-    padding: 15px;
+    padding: 15px 15px 0 15px;
+    border-top: 1px solid #aaaaaa;
 }
 .box_1, .box_5 {
     flex-basis: 100%;
