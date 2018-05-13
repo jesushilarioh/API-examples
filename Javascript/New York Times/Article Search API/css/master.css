@@ -5,21 +5,19 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Open Sans', sans-serif;
 */
 
-*, ::after, ::before {
-    box-sizing: none;
-}
 body {
     background-color: #FFF;
     color: #000;
     padding-bottom: 15px;
     font-family: 'Roboto Slab', serif;
 }
-h1 {
+h1, h3, h4 {
     font-family: 'Playfair Display', serif;
+}
+h1 {
     font-weight: 700;
 }
 h4 {
-    font-family: 'Playfair Display', serif;
     padding: .5em 0 0 0;
     margin: 4px 0 0 0;
 }
@@ -27,7 +25,7 @@ h4 span {
     font-weight: 700;
 }
 button {
-    background-color: #000;
+    background-color: #111;
     color: #fff;
 }
 .container {
@@ -47,11 +45,9 @@ button {
     text-decoration: none;
 }
 .article-div h3 {
-    font-family: 'Playfair Display', serif;
     margin-top: 0;
 }
 .article-div p {
-    font-family: 'Roboto Slab', serif;
     margin-bottom: 12px;
 }
 .article-div div {
@@ -60,8 +56,6 @@ button {
 .article-div img {
     border-radius: 1px;
     box-shadow: 5px 10px 12px rgba(170, 170, 170, 0.8)!important;
-}
-.article-div img {
     width: 100%;
 }
 .article_date {
