@@ -11,7 +11,7 @@ $(document).ready(function () {
   function apiCall() {
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
-      'api-key': "<--- YOUR API KEY HERE -->",
+      'api-key': "<-- YOUR API KEY HERE -->",
       'q': $("#userValue").val(),
       'begin_date': "17001111",
       'end_date': "20191111",
