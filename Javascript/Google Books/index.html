@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      const url = "https://www.googleapis.com/books/v1/volumes?q=php";
+      fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data)
+        {
+          document.body.innerHTML = data.items[0].searchInfo.textSnippet;
+          console.log(data);
+        })
+        .catch(function(error)
+        {
+          console.log(JSON.stringify(error));
+        });
+    </script>
+  </body>
+
+</html>
